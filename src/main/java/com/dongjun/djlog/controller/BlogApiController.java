@@ -4,6 +4,7 @@ package com.dongjun.djlog.controller;
 import com.dongjun.djlog.domain.Article;
 import com.dongjun.djlog.dto.AddArticleRequest;
 import com.dongjun.djlog.dto.ArticleResponse;
+import com.dongjun.djlog.dto.UpdateArticleRequest;
 import com.dongjun.djlog.service.BlogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -52,5 +53,14 @@ public class BlogApiController {
 
         return ResponseEntity.ok()
                 .build();
+    }
+
+    @PutMapping("/api/articles/{id}")
+    public ResponseEntity<Article> updateArticle(@PathVariable long id,
+                                                 @RequestBody UpdateArticleRequest request) {
+        Article updatedArticle = blogService.update(id, request);
+
+        return ResponseEntity.ok()
+                .body(updatedArticle);
     }
 }
