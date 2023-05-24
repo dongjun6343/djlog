@@ -22,4 +22,10 @@ public class BlogService {
         return blogRepository.findAll();
     }
 
+    public Article findById(long id) {
+        return blogRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("존재하지 않은 ID ==> " + id));
+    }
+
+
 }
