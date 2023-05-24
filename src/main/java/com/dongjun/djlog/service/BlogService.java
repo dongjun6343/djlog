@@ -27,5 +27,7 @@ public class BlogService {
                 .orElseThrow(() -> new IllegalArgumentException("존재하지 않은 ID ==> " + id));
     }
 
-
+    public void delete(long id) {
+        blogRepository.deleteById(id);
+    }
 }
