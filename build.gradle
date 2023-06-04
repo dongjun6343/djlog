@@ -23,7 +23,7 @@ dependencies {
 	implementation 'javax.xml.bind:jaxb-api:2.3.1'
 
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
-	implementation 'mysql:mysql-connector-java'
+	implementation 'com.mysql:mysql-connector-j'
 
 	runtimeOnly 'com.h2database:h2'
 
