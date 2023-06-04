@@ -45,6 +45,8 @@
 ##### 블로그 글 수정화면
 ![image](https://github.com/dongjun6343/djlog/assets/45116087/a6b5f1bc-983e-4927-ba54-25bd2e77852c)
 
+##### 2023.06.04 목록버튼 추가
+![image](https://github.com/dongjun6343/djlog/assets/45116087/61bf7e19-b150-480f-9399-e5944d354e05)
 
 #### 🌱DJLOG URL
 
